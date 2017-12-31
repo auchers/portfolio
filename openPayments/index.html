@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="data/assets/styles.css" /> <!-- use this for layout customizations -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <title>Basic Data Presentation</title>
+<body>
+<div class="container">
+    <div class="title row">
+        <div class="col">
+            <h1>Mapping Open Payments by Medical Specialty</h1>
+        </div>
+    </div>
+    <div class="subtitle row">
+        <div class="col">
+            <p><a href="https://www.cms.gov/openpayments/">Open Payments</a> is a federal program, required by the Affordable Care Act, that collects information about the payments drug and device companies make to physicians and teaching hospitals for things like travel, research, gifts, speaking fees, and meals.</p>
+        </div>
+        <div class="col">
+            <p> Each circle below represents one medical field and each angle represents the amount of money received from one payment type. Colors represent different years of data -- by hovering on the color key below, you can isolate just that year. Additionally, by double-clicking on a data point, you will be taken to a another tab where you can explore the raw data.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col colorKey"></div>
+        <div class="col paymentTypeKey"></div>
+    </div>
+
+    <div id="container" class="row">
+
+    </div>
+</div>
+<script src="sketch.js"></script>
+</body>
+</html>

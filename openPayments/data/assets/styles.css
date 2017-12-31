@@ -1,0 +1,85 @@
+body{
+    padding: 2em;
+    background-color: #E8E3D0;
+}
+
+#container{
+    display: block;
+}
+
+.title, .subtitle, .colorKey{
+    margin-bottom: 2rem;
+}
+
+.colors{
+    display: inline-block;
+    padding: 1em;
+}
+
+.colors:hover{
+    font-weight: bolder;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+svg.specialties:not(:root) {
+    overflow: visible;
+}
+
+div.plot{
+    display: inline-block;
+    width: 300;
+    height: 350;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+circle.playingField{
+    fill: none;
+    stroke: black;
+}
+
+circle.ref{
+    fill:none;
+    stroke: black;
+    stroke-opacity: .3;
+}
+
+circle.datapoints{
+    fill: black;
+    stroke: transparent;
+    stroke-width: 15px;
+}
+
+path{
+    /*fill-opacity: .3;*/
+    stroke: black;
+}
+
+div.label{
+    position: absolute;
+    width: 60px;
+    height: 3rem;
+    font-size: x-small;
+    transform: translate(50vw, 30vh);
+    overflow: hidden;
+
+}
+
+div.label:hover{
+    overflow: visible;
+    width: auto;
+    background-color: #FFFFFF;
+}
+
+div.example{
+    width: 100%;
+    /*transform-origin: 50vw;*/
+}
+
+.reference.row{
+    height: 60vh;
+}
